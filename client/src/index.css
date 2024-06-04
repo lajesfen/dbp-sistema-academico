@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Cell-dayView {
+  @apply flex items-center justify-center space-x-2 !important;
+}
+
+.Cell-dayOfWeek {
+  @apply text-[10px] text-[#797979] !important;
+}
+
+.Cell-dayOfMonth {
+  @apply text-[16px] text-[#000000] !important;
+
+}
+
+.Cell-dayOfMonth.Cell-highlightedText {
+  @apply text-[16px] text-[#00BFFF] !important;
+}
+
+.Appointment-appointment {
+  @apply bg-white shadow-md border-[#bdbdbd24] !important;
+}
+
+.VerticalAppointment-content {
+  @apply text-black !important;
+}
+
+.VerticalAppointment-title {
+  @apply uppercase font-medium !important;
+}
+
+.VerticalAppointment-textContainer {
+  @apply text-[#BDBDBD] !important;
+}
+
+.Layout-popover {
+  @apply w-[700px] !important;
+}
